@@ -1,0 +1,60 @@
+
+body{
+    margin:0%
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas: 
+    "headr headr headr headr"
+    "sidebr main main main"
+     "sidebr main main main"
+    "sidebr main main main"
+    "footr footr footr footr"
+    ;
+
+}
+
+.headr{
+    background-color: red;
+    grid-area: headr;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    #container{
+    grid-template-areas:
+    
+    "headr headr headr headr"
+    "main main main main"
+     "main main main main"
+    "main main main main"
+    "footr footr footr footr"
+    ;}
+    .sidebr{
+        display: none;
+    }
+}
+
+
+
+.sidebr{
+    background-color: blue;
+    grid-area: sidebr;
+}
+
+.main{
+    background-color: purple;
+    grid-area: main;
+}
+
+.footr{
+    background-color: green;
+    grid-area: footr;
+}
